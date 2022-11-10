@@ -1,0 +1,8 @@
+#!/bin/sh -e
+
+A=wait
+
+as $A.s -o $A.o
+ld $A.o -o $A
+
+./$A || echo $?
