@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+A="cpuid"
+
+# compile
+as -o $A.o $A.s
+
+# link
+ld -o $A $A.o
+
+# run
+./$A
