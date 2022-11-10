@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+A=hello
+
+gcc -c $A.s
+ld $A.o -o $A
+./$A
